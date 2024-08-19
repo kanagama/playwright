@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ul>
+          <li><a href="/">ホーム</a></li>
+          <li><a href="/form">入力フォーム</a></li>
+        </ul>
+        {children}
+      </body>
     </html>
   );
 }
